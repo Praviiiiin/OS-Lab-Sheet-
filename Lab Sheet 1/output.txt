@@ -91,3 +91,21 @@ Executable: /usr/bin/python3.8
 FD 0 -> /dev/pts/2
 FD 1 -> /dev/pts/2
 FD 2 -> /dev/pts/2
+
+==================================================
+TASK 5: Process Prioritization
+==================================================
+[Parent] PID=32145 creating 3 children...
+
+[Child 1] PID=32146, PPID=32145, Nice=0
+[Child 2] PID=32147, PPID=32145, Nice=5
+[Child 3] PID=32148, PPID=32145, Nice=10
+[Child 1] PID=32146 finished work. Sum=50000000
+[Child 2] PID=32147 finished work. Sum=50000000
+[Child 3] PID=32148 finished work. Sum=50000000
+[Parent] Child 32146 exited with status 0
+[Parent] Child 32147 exited with status 0
+[Parent] Child 32148 exited with status 0
+
+All children completed. Check execution order above.
+Tip: Observe with 'top -H' or 'ps -el' while running to see priorities.
