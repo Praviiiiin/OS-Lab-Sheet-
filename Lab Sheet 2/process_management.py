@@ -9,8 +9,6 @@ logging.basicConfig(
 )
 
   
-  
-  
   Sub-Task 2: Define a function that simulates a process task
 Objective: Write a function that mimics the work of a system process.
 import time
