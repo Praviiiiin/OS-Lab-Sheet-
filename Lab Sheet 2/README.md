@@ -29,12 +29,3 @@ It uses:
 
 ---
 
-## 🧠 Code Explanation
-
-### 🔹 Setup Logging
-```python
-logging.basicConfig(
-    filename='process_log.txt',
-    level=logging.INFO,
-    format='%(asctime)s - %(processName)s - %(message)s'
-)
